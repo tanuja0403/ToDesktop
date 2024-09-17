@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Microsoft- AI, Cloud, Computing, Gaming & Apps</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/41ef5cb9ae.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="p-3 flex bg-white justify-between items-center">
+        <a href="#" id="brand" class="flex gap-2 items-center">
+            <img class="object-cover max-w-12 max-h-12" src="images/asset 0.png" alt="Logo">
+            <span class="text-lg font-medium font-display">ToDesktop</span>
+        </a>
+        <div id="navmenu" class="hidden   md:flex gap-12">
+            <a href="#" class="font-medium hover:text-blue-400">Pricing</a>
+            <a href="#" class="font-medium hover:text-blue-400">Docs</a>
+            <a href="#" class="font-medium hover:text-blue-400">Changelog</a>
+            <a href="#" class="font-medium hover:text-blue-400">Blogs</a>
+            <a href="#" class="font-medium hover:text-blue-400">Login</a>
+        </div>
+        <button
+            class="hidden md:flex gap-2 items-center border border-gray-300 px-4 py-2 rounded-lg hover:border-gray-600">
+            <img src="images/asset 1.svg">
+
+            <span> Electron Developers</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="p-2 md:hidden" onclick="handleMenu()">
+            <i class="fa-solid fa-bars text-gray-600"></i>
+        </button>
+
+        <div id="nav-dia" class="fixed md:hidden bg-white inset-0 p-3 " style="display: none;">
+            <div id="nav-bar " class="flex justify-between">
+                <a href="#" id="brand" class="flex gap-2 items-center">
+                    <img class="object-covers max-w-12 max-h-12" src="images/asset 0.png" alt="Logo">
+                    <span class="text-lg font-medium font-display">ToDesktop</span>
+                </a>
+                <button class="p-2" onclick="handleMenu()">
+                    <i class="fa-solid fa-xmark text-gray-600"></i>
+                </button>
+            </div>
+            <div class="mt-6">
+                <a href ="#" class = "font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg ">Pricing</a>
+                <a href ="#" class = "font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg ">Docs</a>
+                <a href ="#" class = "font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg ">Changelog</a>
+                <a href ="#" class = "font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg ">Blogs</a>
+                <a href ="#" class = "font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg ">Login</a>
+                
+            </div>
+            <div class = "h-[1px] bg-gray-400 mb-5"> </div>
+            <button
+            class="   w-full p-20 flex gap-2 items-center  px-4 py-2 rounded-lg hover:border-gray-500 ">
+            <img src="images/asset 1.svg">
+
+            <span> Electron Developers</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        </div>
+    </nav>
+    <!-- main section -->
+
+    <main>
+        <div id="hero" class="pb-8 bg-gray-50">
+            <div class="flex justify-center">
+                
+                <button  class=" ml-3 mt-20  border border-orange-100 p-1  bg-yellow-50 rounded-lg hover:bg-orange-50">
+                    <i class="fa-solid fa-eye pr-1"></i>
+                    v0.21.1:Find-in-page bug fixes
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="flex justify-evenly text-center pt-5">
+                <p class="text-gray-500"><i class="fa-regular fa-file-code pr-1 text-gray-500"></i>Code optional</p>
+                <p class="text-gray-500"><i class="fa-regular fa-hand pr-1 text-gray-500"></i>Drag and drop builder</p>
+                <p class="text-gray-500"><i class="fa-regular fa-window-restore p-1 text-gray-500"></i>Windows,Mac,Linux</p>
+            </div>
+          
+            <div class="flex justify-center text-center flex-col ">
+                <p class="text-6xl font-bold pb-8 pt-8 ml-3 pl-20 pr-20"> Web app to desktop app in minutes</p>
+                <p class="text-3xl font-medium ml-3 pb-8 pl-32 pr-32 text-wrap">Take your web app codebase and transform it into a cross platform desktop app with native functionality.</p>
+
+            </div>
+           <div class="flex justify-center">
+            <button class=" border bg-blue-700 text-white rounded-lg p-2 font-semibold  ml-3 mr-3 hover:bg-blue-800">Download Now</button>
+            <button class="border bg-white text-black rounded-lg p-2 font-semibold  ml-3 mr-3 hover:bg-gray-200">Read docs</button>
+           </div>
+      
+        <div class="flex justify-center font-bold pt-7 text-gray-500 ">
+            <img src="images/asset 2.svg">
+            <p> APPS POWERED BY ToDesktop</p>
+            <img class="scale-x-[-1]" src="images/asset 2.svg">
+        </div>
+    </div>
+    <div id="companies-container" class="flex flex-col gap-4 bg-gray-50">
+        <div id="line1 " class="flex gap-4 justify-center text-center  ">
+            <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
+                <img class="w-12 h-12 md:w-16 md:h-16" src="images/asset 3.png">
+                <span class="text-[12px] md:text-[16px] font-semibold">Morgen</span>
+            </div>
+            <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
+                <img class="w-12 h-12 md:w-16 md:h-16" src="images/asset 4.png">
+                <span class="text-[12px] md:text-[16px] font-semibold">Campsite</span>
+            </div>
+            <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
+                <img class="w-12 h-12 md:w-16 md:h-16" src="images/asset 5.png">
+                <span class="text-[12px] md:text-[16px] font-semibold">Rise</span>
+            </div>
+            <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
+                <img class="w-12 h-12 md:w-16 md:h-16" src="images/asset 6.png">
+                <span class="text-[12px] md:text-[16px] font-semibold">ClickUp</span>
+            </div>
+            <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
+                <img class="w-12 h-12 md:w-16 md:h-16" src="images/asset 7.png">
+                <span class="text-[12px] md:text-[16px] font-semibold">Notion Calender</span>
+            </div>
+            <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
+                <img class="w-12 h-12 md:w-16 md:h-16" src="images/asset 8.png">
+                <span class="text-[12px] md:text-[16px] font-semibold">Cron</span>
+            </div>
+           
+            
+            
+        </div>
+        <div id="line2 " class="flex gap-4 justify-center text-center ">
+            <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
+                <img class="w-12 h-12 md:w-16 md:h-16" src="images/asset 11.png">
+                <span class="text-[12px] md:text-[16px] font-semibold">Cursor</span>
+            </div>
+            <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
+                <img class="w-12 h-12 md:w-16 md:h-16" src="images/asset 12.png">
+                <span class="text-[12px] md:text-[16px] font-semibold">Beep</span>
+            </div>
+            <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
+                <img class="w-12 h-12 md:w-16 md:h-16" src="images/asset 13.png">
+                <span class="text-[12px] md:text-[16px] font-semibold">VoiceFlow</span>
+            </div>
+            <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
+                <img class="w-12 h-12 md:w-16 md:h-16" src="images/asset 14.png">
+                <span class="text-[12px] md:text-[16px] font-semibold">KiteMaker</span>
+            </div>
+            <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
+                <img class="w-12 h-12 md:w-16 md:h-16" src="images/asset 15.png">
+                <span class="text-[12px] md:text-[16px] font-semibold">BaseDash</span>
+            </div>
+            <div class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300">
+                <img class="w-12 h-12 md:w-16 md:h-16" src="images/asset 16.png">
+                <span class="text-[12px] md:text-[16px] font-semibold">Bent</span>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- <div class="m-10">
+        <h1 class="text-4xl font-bold"> How it works?</h1>
+    </div>
+
+    <div id="boxes" class="h-96 bg-gray-100 border border-gray-300 rounded">
+      <button class="bg-orange-200 text-yellow-700 h-9 w-20 m-4 border rounded-lg">Step 1</button>
+      <h class="flex m-4 text-4xl font-serif">Bootstrap straight from your web app</h>
+      <p class="flex m-4 text-xl">Copy and paste your web app url into ToDesktop. Customise your app design, app icon and window frame UI with no code. </p>
+      <img src="images/asset 68.svg"
+    </div>
+
+
+    <div class="h-[1000px]"></div> -->
+  
+        
+    </main>
+
+    <script src='script.js' type="application/javascript"></script>
+
+
+
+
+</body>
+
+</html>
